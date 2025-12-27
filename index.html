@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Harish Kamaraj | Visionary Industrialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              apple: {
+                gray: '#1D1D1F', // Apple Dark Gray
+                sub: '#86868b', // Apple Subtext
+              },
+              notion: {
+                cream: '#F9F9F7', // Soft Notion Cream
+                border: '#E3E3E0', // Subtle Border
+              },
+              brand: {
+                sapphire: '#003366', // Deep Sapphire Blue
+                accent: '#0066CC', // Lighter blue for interactions
+                navy: '#0f172a', // Legacy Navy
+                teal: '#0d9488', // Clinical Teal
+                gold: '#d97706', // Heritage Gold
+              }
+            },
+            boxShadow: {
+              'soft': '0 8px 30px rgba(0,0,0,0.04)',
+              'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+              '4xl': '0 32px 64px -12px rgba(0, 0, 0, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e3e3e0;
+        border-radius: 10px;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Fix unwanted borders around images */
+      img {
+        border: 0 !important;
+        outline: none !important;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Fix random layout breaks/white gaps */
+      section {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      .text-highlight {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+      .text-highlight::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(13, 148, 136, 0.15);
+        z-index: -1;
+        transition: height 0.3s ease;
+      }
+      .text-highlight:hover::after {
+        height: 80%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.2.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?deps=react@18.2.0,react-dom@18.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white text-apple-gray antialiased selection:bg-brand-sapphire selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
